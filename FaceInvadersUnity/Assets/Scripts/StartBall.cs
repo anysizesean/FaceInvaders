@@ -24,7 +24,7 @@ public class StartBall : MonoBehaviour {
     {
         GameObject face = GameObject.Find("Face");
         faceX = face.transform.position.x;
-        faceY = face.transform.position.y - .75f;
+        faceY = face.transform.position.y - .2f;
         faceZ = face.transform.position.z + 1f;
         FirstBall = Instantiate(Resources.Load("StartBall"), new Vector3(faceX,faceY,faceZ), Quaternion.identity) as GameObject;
         FirstBall.gameObject.GetComponent<Rigidbody>().AddTorque(transform.right * 5f);
